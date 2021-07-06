@@ -1,2 +1,55 @@
 .App {
 }
+.header {
+  width: 100%;
+  margin: 0;
+  border: 1px solid black;
+}
+
+.header h1 {
+  font-size: 36px;
+  margin-left: 2em;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  padding: 0.5em;
+  border-radius: 5px;
+  width: 650px;
+  background-color: rgb(216, 207, 207);
+}
+h2 {
+  margin-left: 10px;
+}
+
+.form-inputs {
+  width: 600px;
+  height: 35px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  padding: 3px;
+  padding-left: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+}
+
+#experience-input {
+  width: 600px;
+  height: 100px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: none;
+  font-family: inherit;
+}
+
+#edit-container {
+  display: flex;
+  flex-direction: column;
+}
