@@ -37,6 +37,21 @@ const Main = () => {
         responsibilities: "",
       },
     ]);
+    console.log(experienceInfo);
+  };
+  const delExp = (index) => {
+    const list = [...experienceInfo];
+    list.splice(index, 1);
+    setExpInfo(list);
+    console.log("delete");
+  };
+
+  const handleExpInfoChange = (e, index) => {
+    const { name, value } = e.target;
+    const list = [...experienceInfo];
+    list[index][name] = value;
+    setExpInfo(list);
+    console.log(experienceInfo);
   };
 
   return (
@@ -53,7 +68,7 @@ const Main = () => {
             Add
           </button>
         </h3>
-        {experienceInfo.map((exp) => {
+        {experienceInfo.map((exp, i) => {
           return (
             <ExperienceInfoForm
               key={exp.key}
@@ -62,6 +77,8 @@ const Main = () => {
               companyAddress={exp.companyAddress}
               yearsOfEmp={exp.yearsOfEmp}
               responsibilities={exp.responsibilities}
+              onDelete={() => delExp(i)}
+              onChange={(e) => handleExpInfoChange(e, i)}
             />
           );
         })}
