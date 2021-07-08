@@ -7,49 +7,53 @@
 }
 
 .header h1 {
-  font-size: 36px;
-  margin-left: 2em;
+  font-size: 24px;
+  margin-left: 1em;
 }
 
-.container {
+.cv-body {
+  display: flex;
+  width: 100%;
+  background-color: yellow;
+}
+
+.cv-form {
+  width: 50%;
+}
+.cv-form h3 {
+  margin-left: 1em;
+}
+.form-container {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1em;
-  padding: 0.5em;
+  margin-top: 0.5em;
+  width: 90%;
+  padding: 10px;
+  background-color: rgb(214, 214, 214);
   border-radius: 5px;
-  width: 650px;
-  background-color: rgb(216, 207, 207);
 }
-h2 {
-  margin-left: 10px;
-}
-
-.form-inputs {
-  width: 600px;
-  height: 35px;
-  margin-left: 10px;
-  margin-bottom: 10px;
-  padding: 3px;
-  padding-left: 10px;
-  font-size: 14px;
-  border-radius: 5px;
+.form-container input {
+  width: 95%;
+  padding: 6px 10px;
+  margin-bottom: 0.5em;
+  font-size: 16px;
   border: none;
+  border-radius: 5px;
 }
-
-#experience-input {
-  width: 600px;
+.form-container textarea {
+  width: 95%;
   height: 100px;
-  margin-left: 10px;
-  margin-bottom: 10px;
-  padding-top: 10px;
-  padding-left: 10px;
-  font-size: 14px;
-  border-radius: 5px;
-  border: none;
+  padding: 6px 10px;
+  font-size: 16px;
   font-family: inherit;
+  border: none;
+  border-radius: 5px;
+  resize: none;
 }
 
-#edit-container {
-  display: flex;
-  flex-direction: column;
+.cv-display {
+  background-color: grey;
+  width: 50%;
+  height: 100vh;
+  padding: 10px;
 }
