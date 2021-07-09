@@ -8,7 +8,7 @@ const PersonalInfoForm = ({ value, onChange }) => {
         name='firstName'
         placeholder='First Name'
         onChange={onChange}
-        value={value.firstname}
+        value={value.firstName}
       />
       <Input
         type='text'

@@ -1,9 +1,7 @@
-.App {
-}
 .header {
   width: 100%;
   margin: 0;
-  border: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 .header h1 {
@@ -11,10 +9,9 @@
   margin-left: 1em;
 }
 
-.cv-body {
+.app-body {
   display: flex;
   width: 100%;
-  background-color: yellow;
 }
 
 .cv-form {
@@ -22,6 +19,7 @@
 }
 .cv-form h3 {
   margin-left: 1em;
+  width: 90%;
 }
 .form-container {
   margin-left: auto;
@@ -50,10 +48,28 @@
   border-radius: 5px;
   resize: none;
 }
+.add-btn {
+  padding: 6px 8px;
+  border-radius: 2px;
+  border: none;
+  background-color: rgb(102, 216, 102);
+  color: black;
+  float: right;
+}
+.add-btn:hover {
+  background-color: rgb(42, 145, 42);
+  color: white;
+}
 
-.cv-display {
-  background-color: grey;
-  width: 50%;
-  height: 100vh;
-  padding: 10px;
+.del-btn {
+  background-color: rgb(247, 111, 111);
+  padding: 6px 8px;
+  border-radius: 2px;
+  border: none;
+  margin-top: 0.5em;
+}
+
+.del-btn:hover {
+  background-color: rgb(241, 25, 25);
+  color: white;
 }

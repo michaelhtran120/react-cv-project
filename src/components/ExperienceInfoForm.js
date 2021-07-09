@@ -1,14 +1,8 @@
 import Input from "./Input";
 
-const ExperienceInfoForm = ({
-  position,
-  company,
-  companyAddress,
-  yearsOfEmp,
-  description,
-  onDelete,
-  onChange,
-}) => {
+const ExperienceInfoForm = ({ state, onDelete, onChange }) => {
+  const { position, company, companyAddress, yearsOfEmp, description } = state;
+
   return (
     <div className='form-container'>
       <Input
@@ -35,7 +29,7 @@ const ExperienceInfoForm = ({
       <Input
         type='text'
         name='yearsOfEmp'
-        placeholder='Years Employed'
+        placeholder='Month/Year - Month/Year'
         value={yearsOfEmp}
         onChange={onChange}
       />
@@ -47,7 +41,9 @@ const ExperienceInfoForm = ({
       >
         {description}
       </textarea>
-      <button onClick={onDelete}>Delete</button>
+      <button className='del-btn' onClick={onDelete}>
+        Delete
+      </button>
     </div>
   );
 };
